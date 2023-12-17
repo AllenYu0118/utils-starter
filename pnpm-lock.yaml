@@ -17,6 +17,9 @@ importers:
       '@allen0118/core':
         specifier: workspace:*
         version: link:../core
+      vue-demi:
+        specifier: ^0.14.6
+        version: 0.14.6(vue@3.3.11)
 
   playground:
     dependencies:
@@ -24,6 +27,9 @@ importers:
         specifier: ^3.3.11
         version: 3.3.11(typescript@5.2.2)
     devDependencies:
+      '@allen0118/bar':
+        specifier: workspace:*
+        version: link:../packages/bar
       '@allen0118/core':
         specifier: workspace:*
         version: link:../packages/core
@@ -703,6 +709,21 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
+
+  /vue-demi@0.14.6(vue@3.3.11):
+    resolution: {integrity: sha512-8QA7wrYSHKaYgUxDA5ZC24w+eHm3sYCbp0EzcDwKqN3p6HqtTCGR/GVsPyZW92unff4UlcSh++lmqDWN3ZIq4w==}
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+    dependencies:
+      vue: 3.3.11(typescript@5.2.2)
+    dev: false
 
   /vue-template-compiler@2.7.15:
     resolution: {integrity: sha512-yQxjxMptBL7UAog00O8sANud99C6wJF+7kgbcwqkvA38vCGF7HWE66w0ZFnS/kX5gSoJr/PQ4/oS3Ne2pW37Og==}

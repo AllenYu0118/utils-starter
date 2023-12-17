@@ -1,9 +1,16 @@
 <script setup lang="ts">
+import Foo from './Foo.vue'
+import { Wrapper } from '@allen0118/core'
+import { barObject } from '@allen0118/bar'
+
+const wrapper = new Wrapper()
+wrapper.use(barObject, { name: 'Allen' })
 
 </script>
 
 <template>
-  <H1>Playground</H1>
+  <h1>Playground</h1>
+  <Foo />
 
 </template>
 

@@ -9,5 +9,10 @@ export class Bar extends Wrapper {
   install () {
     console.log('installed!')
   }
+}
 
+export const barObject =  {
+  install (options) {
+    console.log('bar installed!', options, this)
+  }
 }
