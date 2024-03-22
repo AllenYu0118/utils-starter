@@ -1,0 +1,5 @@
+{
+  "name": "@yu/bar",
+  "version": "0.0.1",
+  "exports": "./packages/bar/index.ts"
+}
